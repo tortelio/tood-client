@@ -1,0 +1,161 @@
+normalize-css()
+border-box-html()
+
+$white-like = #FFDEAD
+$dark-brown = #560c0c
+
+body
+  font-family Roboto
+
+input
+  font-family Lobster
+  font-size 1.25em
+
+.row.error > input
+  field-error()
+
+.row > div.error-msg
+  opacity 0
+
+.row.error > div.error-msg
+  opacity 1
+
+.row > div.successful-msg
+  opacity 0
+
+.row.successful > div.successful-msg
+  opacity 1
+
+.table
+  display table
+
+.table-cell
+  display table-cell
+
+.vertical-mid
+  vertical-align middle
+
+.full
+  width 100%
+  height 100%
+
+.login
+  background $white-like
+
+.lobster
+  font-family Lobster
+
+.centered
+  text-align center
+  input
+    text-align center
+
+.left
+  text-align left
+.right
+  text-align right
+
+.centered-container
+  margin 10px auto
+
+.login-container
+  width 1000px
+
+.login-header
+  font-family Lobster
+  font-size 9em
+  color $dark-brown
+
+.login-body
+  margin 50px
+  width 400px
+
+.login-body.float-left
+  float left
+
+.msg-box
+  min-height 21px
+
+.msg-box.successful > .error-msg
+  height 0px
+
+.msg-box.error > .successful-msg
+  height 0px
+
+.error-msg
+  color #d30
+
+.successful-msg
+  color #0db
+
+.form
+  margin-top 40px
+
+.row
+  width 100%
+  margin-top 20px
+
+label
+  label: block
+
+.submit
+  button($dark-brown, 'large')
+  font-family Roboto
+
+.sticky
+  background-color #ffc
+  padding 20px
+  box-shadow 5px 5px 7px rgba(100, 100, 100, 0.5)
+  transition transform .1s linear
+  transition .1s
+  float none
+
+  input
+    border 1px #222 solid
+    text-align center
+
+.sticky:hover, .sticky:focus
+  transform scale(1.05)
+  transition .1s
+  transition transform .1s linear
+  z-index 5
+
+// USER PAGE
+
+.user-container
+  width 1000px
+  margin 60px auto
+  min-height 500px
+
+  .row
+    margin-top 5px
+
+button
+  margin 3px
+
+.navbar
+  nav()
+
+.navbar > .username
+  color white
+
+.navbar > a
+  color wheat
+  float right
+  margin: 10px
+
+.item
+  margin 20px
+  width 400px
+
+  label
+    label()
+
+.x
+  height 0px
+  cursor pointer
+
+.items-group
+  width 100%
+  .items
+    display table-cell
